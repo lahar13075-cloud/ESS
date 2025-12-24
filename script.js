@@ -67,6 +67,7 @@ const questions = [
 { q:"Biogas is produced from?", opts:["Organic waste","Plastic","Metal","Glass"], answer:"A" },
 { q:"Environmental impact assessment evaluates?", opts:["Project impacts","Profits","Population","Weather"], answer:"A" },
 { q:"Public awareness helps in?", opts:["Environmental protection","Pollution increase","Deforestation","Resource depletion"], answer:"A" },
+  
 { q:"Carrying capacity refers to?", opts:["Maximum population an environment can support","Total population","Birth rate","Death rate"], answer:"A" },
 { q:"Population explosion leads to?", opts:["Resource depletion","Resource conservation","Sustainability","Biodiversity increase"], answer:"A" },
 { q:"Urbanization mainly causes?", opts:["Environmental stress","Forest growth","Population control","Clean environment"], answer:"A" },
@@ -108,6 +109,7 @@ const questions = [
 { q:"Earth Day is celebrated on?", opts:["April 22","June 5","March 21","May 1"], answer:"A" },
 { q:"World Environment Day is on?", opts:["June 5","April 22","July 11","March 22"], answer:"A" },
 { q:"Sustainable lifestyle promotes?", opts:["Resource conservation","Overconsumption","Waste generation","Pollution"], answer:"A" },
+  
 { q:"Ozone hole was first discovered over?", opts:["Antarctica","Arctic","Asia","Africa"], answer:"A" },
 { q:"Montreal Protocol deals with?", opts:["Ozone depletion","Climate change","Biodiversity","Water pollution"], answer:"A" },
 { q:"Primary cause of acid rain is?", opts:["Sulphur dioxide","Carbon monoxide","Methane","Ozone"], answer:"A" },
