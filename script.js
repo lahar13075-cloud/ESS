@@ -120,12 +120,6 @@ const questions = [
 { q:"Biomagnification occurs in?", opts:["Food chain","Water cycle","Carbon cycle","Nitrogen cycle"], answer:"A" },
 { q:"DDT accumulation is an example of?", opts:["Biomagnification","Biodegradation","Photosynthesis","Respiration"], answer:"A" },
 
-{ q:"Wetlands are important for?", opts:["Flood control","Deforestation","Mining","Urbanization"], answer:"A" },
-{ q:"Mangroves protect coastal areas from?", opts:["Erosion","Earthquakes","Volcanoes","Drought"], answer:"A" },
-{ q:"Environmental education helps in?", opts:["Awareness creation","Pollution increase","Resource depletion","Deforestation"], answer:"A" },
-{ q:"Sustainable cities focus on?", opts:["Green infrastructure","More traffic","More pollution","Overcrowding"], answer:"A" },
-{ q:"Intergenerational equity means?", opts:["Justice for future generations","Justice for present only","Economic profit","Industrial growth"], answer:"A" }
-
 ];
 
 let order = [];
