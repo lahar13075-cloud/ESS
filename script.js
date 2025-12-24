@@ -1,126 +1,1006 @@
 document.addEventListener("DOMContentLoaded", () => {
 // ---------- 100 ESS QUESTIONS ----------
 const questions = [
-
-{ q:"Environment refers to?", opts:["Surroundings of an organism","Only air","Only water","Only soil"], answer:"A" },
-{ q:"Which of the following is a biotic component?", opts:["Plants","Air","Water","Soil"], answer:"A" },
-{ q:"Which gas is most abundant in the atmosphere?", opts:["Nitrogen","Oxygen","Carbon dioxide","Hydrogen"], answer:"A" },
-{ q:"Lithosphere mainly consists of?", opts:["Rocks","Water","Air","Living organisms"], answer:"A" },
-{ q:"Hydrosphere includes?", opts:["Water bodies","Rocks","Soil","Atmosphere"], answer:"A" },
-
-{ q:"Which is a renewable resource?", opts:["Solar energy","Coal","Petroleum","Natural gas"], answer:"A" },
-{ q:"Non-renewable resources include?", opts:["Fossil fuels","Wind","Sunlight","Biomass"], answer:"A" },
-{ q:"Forest is an example of?", opts:["Ecosystem","Population","Species","Community"], answer:"A" },
-{ q:"Grassland ecosystem is dominated by?", opts:["Grasses","Trees","Algae","Shrubs"], answer:"A" },
-{ q:"Producers in an ecosystem are?", opts:["Green plants","Animals","Fungi","Bacteria"], answer:"A" },
-
-{ q:"Consumers depend on?", opts:["Producers","Decomposers","Abiotic factors","Sun"], answer:"A" },
-{ q:"Primary consumers are?", opts:["Herbivores","Carnivores","Omnivores","Decomposers"], answer:"A" },
-{ q:"Food chain starts with?", opts:["Producers","Consumers","Decomposers","Animals"], answer:"A" },
-{ q:"Food web represents?", opts:["Interlinked food chains","Single food chain","Population","Habitat"], answer:"A" },
-{ q:"Energy flow in ecosystem is?", opts:["Unidirectional","Bidirectional","Circular","Random"], answer:"A" },
-
-{ q:"Which pyramid is always upright?", opts:["Energy pyramid","Biomass pyramid","Number pyramid","None"], answer:"A" },
-{ q:"Decomposers include?", opts:["Bacteria and fungi","Plants","Herbivores","Carnivores"], answer:"A" },
-{ q:"Biogeochemical cycles include?", opts:["Carbon cycle","Food chain","Energy flow","Population"], answer:"A" },
-{ q:"Main reservoir of carbon is?", opts:["Atmosphere","Oceans","Forests","Soil"], answer:"A" },
-{ q:"Nitrogen fixation converts nitrogen into?", opts:["Ammonia","Nitrate","Nitrite","Protein"], answer:"A" },
-
-{ q:"Water cycle is driven by?", opts:["Solar energy","Wind","Gravity","Plants"], answer:"A" },
-{ q:"Ozone layer is present in?", opts:["Stratosphere","Troposphere","Mesosphere","Thermosphere"], answer:"A" },
-{ q:"Ozone depletion is caused by?", opts:["CFCs","CO2","SO2","NO2"], answer:"A" },
-{ q:"Greenhouse effect is caused by?", opts:["Greenhouse gases","Oxygen","Nitrogen","Ozone"], answer:"A" },
-{ q:"Major greenhouse gas is?", opts:["Carbon dioxide","Oxygen","Nitrogen","Helium"], answer:"A" },
-
-{ q:"Global warming results in?", opts:["Rise in temperature","Earth cooling","More oxygen","More rainfall only"], answer:"A" },
-{ q:"Climate change affects?", opts:["Ecosystems","Only humans","Only animals","Only plants"], answer:"A" },
-{ q:"Biodiversity refers to?", opts:["Variety of life","Only animals","Only plants","Only microbes"], answer:"A" },
-{ q:"Hotspots are areas of?", opts:["High biodiversity","Low population","High pollution","Low rainfall"], answer:"A" },
-{ q:"India is rich in?", opts:["Biodiversity","Deserts","Tundra","Glaciers"], answer:"A" },
-
-{ q:"Endangered species are those which?", opts:["Are at risk of extinction","Are extinct","Are invasive","Are domestic"], answer:"A" },
-{ q:"Conservation of biodiversity means?", opts:["Protection of species","Killing predators","Deforestation","Urbanization"], answer:"A" },
-{ q:"In-situ conservation includes?", opts:["National parks","Zoos","Botanical gardens","Aquariums"], answer:"A" },
-{ q:"Ex-situ conservation includes?", opts:["Zoos","Biosphere reserves","Wildlife sanctuaries","National parks"], answer:"A" },
-{ q:"Deforestation leads to?", opts:["Soil erosion","Rainfall increase","More oxygen","Less pollution"], answer:"A" },
-
-{ q:"Soil erosion is caused by?", opts:["Deforestation","Afforestation","Crop rotation","Irrigation"], answer:"A" },
-{ q:"Land degradation results in?", opts:["Loss of fertility","More yield","Better soil","More crops"], answer:"A" },
-{ q:"Desertification means?", opts:["Conversion of land into desert","Forest growth","Urbanization","Flooding"], answer:"A" },
-{ q:"Air pollution affects?", opts:["Respiratory system","Digestive system","Nervous system only","Muscles"], answer:"A" },
-{ q:"Major air pollutant is?", opts:["Particulate matter","Oxygen","Nitrogen","Argon"], answer:"A" },
-
-{ q:"Water pollution is caused by?", opts:["Industrial waste","Pure rain","Freshwater","Oxygen"], answer:"A" },
-{ q:"Eutrophication occurs due to?", opts:["Excess nutrients","Lack of oxygen","Low temperature","Oil spills"], answer:"A" },
-{ q:"Noise pollution affects?", opts:["Hearing","Vision","Taste","Smell"], answer:"A" },
-{ q:"Solid waste includes?", opts:["Plastic","Water","Air","Gas"], answer:"A" },
-{ q:"3R principle stands for?", opts:["Reduce Reuse Recycle","Remove Replace Repair","Reuse Reduce Recover","Recycle Remove Reduce"], answer:"A" },
-
-{ q:"Plastic pollution mainly affects?", opts:["Marine life","Deserts","Mountains","Atmosphere"], answer:"A" },
-{ q:"E-waste contains?", opts:["Toxic metals","Food waste","Plant waste","Paper"], answer:"A" },
-{ q:"Sustainable development means?", opts:["Development without harming future","Fast development","Urban growth","Industrial growth"], answer:"A" },
-{ q:"Renewable energy reduces?", opts:["Pollution","Energy","Electricity","Cost always"], answer:"A" },
-{ q:"Solar energy source is?", opts:["Sun","Wind","Water","Coal"], answer:"A" },
-
-{ q:"Wind energy is?", opts:["Renewable","Non-renewable","Exhaustible","Polluting"], answer:"A" },
-{ q:"Hydropower uses?", opts:["Flowing water","Wind","Coal","Oil"], answer:"A" },
-{ q:"Biogas is produced from?", opts:["Organic waste","Plastic","Metal","Glass"], answer:"A" },
-{ q:"Environmental impact assessment evaluates?", opts:["Project impacts","Profits","Population","Weather"], answer:"A" },
-{ q:"Public awareness helps in?", opts:["Environmental protection","Pollution increase","Deforestation","Resource depletion"], answer:"A" },
-  
-{ q:"Carrying capacity refers to?", opts:["Maximum population an environment can support","Total population","Birth rate","Death rate"], answer:"A" },
-{ q:"Population explosion leads to?", opts:["Resource depletion","Resource conservation","Sustainability","Biodiversity increase"], answer:"A" },
-{ q:"Urbanization mainly causes?", opts:["Environmental stress","Forest growth","Population control","Clean environment"], answer:"A" },
-{ q:"Slums are associated with?", opts:["Poor sanitation","High income","Low population","Afforestation"], answer:"A" },
-{ q:"Population pyramid shows?", opts:["Age distribution","Climate","Rainfall","Soil type"], answer:"A" },
-
-{ q:"Human development index is based on?", opts:["Health education income","Population only","GDP only","Literacy only"], answer:"A" },
-{ q:"Women empowerment leads to?", opts:["Population stabilization","Population explosion","More pollution","Resource loss"], answer:"A" },
-{ q:"Value education promotes?", opts:["Environmental ethics","Pollution","Consumerism","Deforestation"], answer:"A" },
-{ q:"Environmental ethics deals with?", opts:["Moral relationship with nature","Economic growth","Industrial profit","Urban planning"], answer:"A" },
-{ q:"Anthropocentric view means?", opts:["Human-centered","Nature-centered","Animal-centered","Plant-centered"], answer:"A" },
-
-{ q:"Ecocentric view focuses on?", opts:["Nature as whole","Only humans","Only animals","Only plants"], answer:"A" },
-{ q:"Biocentric ethics emphasize?", opts:["All living beings","Only humans","Only plants","Only animals"], answer:"A" },
-{ q:"Environmental movements aim to?", opts:["Protect environment","Increase pollution","Promote industries","Reduce biodiversity"], answer:"A" },
-{ q:"Chipko movement is related to?", opts:["Forest conservation","Water conservation","Wildlife","Pollution control"], answer:"A" },
-{ q:"Silent Valley movement protected?", opts:["Tropical forest","River","Wetland","Desert"], answer:"A" },
-
-{ q:"Narmada Bachao Andolan is related to?", opts:["Dam construction","Forest fire","Mining","Urbanization"], answer:"A" },
-{ q:"Environmental legislation helps in?", opts:["Pollution control","Pollution increase","Deforestation","Overexploitation"], answer:"A" },
-{ q:"Air Act in India was enacted in?", opts:["1981","1972","1995","2001"], answer:"A" },
-{ q:"Water Act in India was enacted in?", opts:["1974","1981","1990","2000"], answer:"A" },
-{ q:"Wildlife Protection Act was enacted in?", opts:["1972","1980","1986","1991"], answer:"A" },
-
-{ q:"Environment Protection Act was enacted in?", opts:["1986","1972","1991","2000"], answer:"A" },
-{ q:"Polluter pays principle means?", opts:["Polluter bears cost","Government pays","Public pays","No one pays"], answer:"A" },
-{ q:"Sustainable agriculture promotes?", opts:["Soil conservation","Soil erosion","Chemical use","Monoculture"], answer:"A" },
-{ q:"Organic farming avoids?", opts:["Chemical fertilizers","Crop rotation","Manure","Compost"], answer:"A" },
-{ q:"Integrated pest management reduces?", opts:["Chemical pesticides","Crop yield","Soil fertility","Food quality"], answer:"A" },
-
-{ q:"Watershed management aims at?", opts:["Water conservation","Deforestation","Urbanization","Industrialization"], answer:"A" },
-{ q:"Rainwater harvesting helps in?", opts:["Groundwater recharge","Flooding","Water wastage","Pollution"], answer:"A" },
-{ q:"Climate mitigation focuses on?", opts:["Reducing emissions","Adapting only","Ignoring climate","Increasing emissions"], answer:"A" },
-{ q:"Climate adaptation means?", opts:["Adjusting to climate change","Stopping climate","Increasing pollution","Ignoring impacts"], answer:"A" },
-{ q:"Carbon footprint refers to?", opts:["Greenhouse gas emissions","Oxygen usage","Water usage","Soil erosion"], answer:"A" },
-
-{ q:"Paris Agreement deals with?", opts:["Climate change","Biodiversity","Ozone depletion","Wildlife"], answer:"A" },
-{ q:"Kyoto Protocol aims to reduce?", opts:["Greenhouse gases","Water pollution","Noise pollution","Solid waste"], answer:"A" },
-{ q:"Earth Day is celebrated on?", opts:["April 22","June 5","March 21","May 1"], answer:"A" },
-{ q:"World Environment Day is on?", opts:["June 5","April 22","July 11","March 22"], answer:"A" },
-{ q:"Sustainable lifestyle promotes?", opts:["Resource conservation","Overconsumption","Waste generation","Pollution"], answer:"A" },
-  
-{ q:"Ozone hole was first discovered over?", opts:["Antarctica","Arctic","Asia","Africa"], answer:"A" },
-{ q:"Montreal Protocol deals with?", opts:["Ozone depletion","Climate change","Biodiversity","Water pollution"], answer:"A" },
-{ q:"Primary cause of acid rain is?", opts:["Sulphur dioxide","Carbon monoxide","Methane","Ozone"], answer:"A" },
-{ q:"Acid rain affects?", opts:["Soil and water","Only air","Only humans","Only plants"], answer:"A" },
-{ q:"Noise above safe limit causes?", opts:["Hearing loss","Better concentration","Sleep improvement","Energy gain"], answer:"A" },
-
-{ q:"Thermal pollution mainly affects?", opts:["Aquatic life","Forests","Deserts","Mountains"], answer:"A" },
-{ q:"Nuclear waste is?", opts:["Radioactive","Biodegradable","Harmless","Reusable"], answer:"A" },
-{ q:"Radioactive pollution is caused by?", opts:["Nuclear reactions","Fossil fuels","Wind energy","Solar energy"], answer:"A" },
-{ q:"Biomagnification occurs in?", opts:["Food chain","Water cycle","Carbon cycle","Nitrogen cycle"], answer:"A" },
-{ q:"DDT accumulation is an example of?", opts:["Biomagnification","Biodegradation","Photosynthesis","Respiration"], answer:"A" },
+  {
+    q: "Environment refers to:",
+    opts: [
+      "Only living organisms",
+      "Only physical surroundings",
+      "Surroundings including biotic and abiotic components",
+      "Only human-made structures"
+    ],
+    answer: "C"
+  },
+  {
+    q: "Which is a non-renewable resource?",
+    opts: [
+      "Solar energy",
+      "Wind energy",
+      "Coal",
+      "Biomass"
+    ],
+    answer: "C"
+  },
+  {
+    q: "Which gas is mainly responsible for global warming?",
+    opts: [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    answer: "B"
+  },
+  {
+    q: "Biodiversity refers to:",
+    opts: [
+      "Variety of life forms on Earth",
+      "Only plant diversity",
+      "Only animal diversity",
+      "Only microorganisms"
+    ],
+    answer: "A"
+  },
+  {
+    q: "Which of the following is a renewable resource?",
+    opts: [
+      "Coal",
+      "Petroleum",
+      "Natural gas",
+      "Wind energy"
+    ],
+    answer: "D"
+  },
+  {
+    q: "Deforestation mainly leads to:",
+    opts: [
+      "Increase in rainfall",
+      "Soil erosion",
+      "Improved soil fertility",
+      "Decrease in CO₂"
+    ],
+    answer: "B"
+  },
+  {
+    q: "The ozone layer protects life on Earth by absorbing:",
+    opts: [
+      "Infrared radiation",
+      "Visible light",
+      "Ultraviolet radiation",
+      "Gamma rays"
+    ],
+    answer: "C"
+  },
+  {
+    q: "Which is an example of point source pollution?",
+    opts: [
+      "Vehicular emissions",
+      "Industrial chimney",
+      "Agricultural runoff",
+      "Forest fires"
+    ],
+    answer: "B"
+  },
+  {
+    q: "The main cause of acid rain is:",
+    opts: [
+      "CO₂ emissions",
+      "SO₂ and NOx emissions",
+      "Methane release",
+      "Ozone depletion"
+    ],
+    answer: "B"
+  },
+  {
+    q: "Which ecosystem has the highest biodiversity?",
+    opts: [
+      "Desert",
+      "Grassland",
+      "Tropical rainforest",
+      "Tundra"
+    ],
+    answer: "C"
+  },
+  {
+    q: "Noise pollution is measured in:",
+    opts: [
+      "Hertz",
+      "Decibel",
+      "Watt",
+      "Pascal"
+    ],
+    answer: "B"
+  },
+  {
+    q: "Which practice helps in conservation of water?",
+    opts: [
+      "Rainwater harvesting",
+      "Deforestation",
+      "Over-irrigation",
+      "Industrial discharge"
+    ],
+    answer: "A"
+  },
+  {
+    q: "Which of the following is a biodegradable waste?",
+    opts: [
+      "Plastic bottle",
+      "Glass",
+      "Aluminium can",
+      "Vegetable waste"
+    ],
+    answer: "D"
+  },
+  {
+    q: "Chipko movement is associated with:",
+    opts: [
+      "Water conservation",
+      "Forest conservation",
+      "Wildlife protection",
+      "Air pollution control"
+    ],
+    answer: "B"
+  },
+  {
+    q: "Which energy source causes minimum pollution?",
+    opts: [
+      "Coal",
+      "Diesel",
+      "Nuclear",
+      "Solar"
+    ],
+    answer: "D"
+  },
+  {
+    q: "Soil erosion can be prevented by:",
+    opts: [
+      "Afforestation",
+      "Overgrazing",
+      "Deforestation",
+      "Mining"
+    ],
+    answer: "A"
+  },
+  {
+    q: "Which gas causes depletion of ozone layer?",
+    opts: [
+      "Carbon dioxide",
+      "Methane",
+      "Chlorofluorocarbons",
+      "Oxygen"
+    ],
+    answer: "C"
+  },
+  {
+    q: "Which type of pollution affects water bodies?",
+    opts: [
+      "Thermal pollution",
+      "Noise pollution",
+      "Light pollution",
+      "Soil pollution"
+    ],
+    answer: "A"
+  },
+  {
+    q: "The full form of EIA is:",
+    opts: [
+      "Environmental Impact Assessment",
+      "Ecological Industrial Act",
+      "Environmental Information Analysis",
+      "Energy Impact Authority"
+    ],
+    answer: "A"
+  },
+  {
+    q: "Which practice reduces solid waste?",
+    opts: [
+      "Recycling",
+      "Open dumping",
+      "Incineration",
+      "Landfilling"
+    ],
+    answer: "A"
+  },
+  {
+    q: "Which is a primary consumer?",
+    opts: [
+      "Lion",
+      "Deer",
+      "Snake",
+      "Eagle"
+    ],
+    answer: "B"
+  },
+  {
+    q: "Greenhouse effect is caused by:",
+    opts: [
+      "Trapping of heat in atmosphere",
+      "Reflection of sunlight",
+      "Loss of oxygen",
+      "Increase in wind speed"
+    ],
+    answer: "A"
+  },
+  {
+    q: "Which of the following is a man-made disaster?",
+    opts: [
+      "Earthquake",
+      "Flood",
+      "Cyclone",
+      "Industrial gas leak"
+    ],
+    answer: "D"
+  },
+  {
+    q: "Which resource is inexhaustible?",
+    opts: [
+      "Coal",
+      "Petroleum",
+      "Solar energy",
+      "Natural gas"
+    ],
+    answer: "C"
+  },
+  {
+    q: "Wildlife Protection Act in India was enacted in:",
+    opts: [
+      "1952",
+      "1972",
+      "1985",
+      "1991"
+    ],
+    answer: "B"
+  },
+{
+  q: "The study of interaction between organisms and environment is called:",
+  opts: [
+    "Biology",
+    "Ecology",
+    "Geology",
+    "Zoology"
+  ],
+  answer: "B"
+},
+{
+  q: "Which of the following is a secondary consumer?",
+  opts: [
+    "Grass",
+    "Deer",
+    "Snake",
+    "Phytoplankton"
+  ],
+  answer: "C"
+},
+{
+  q: "Air pollution is mainly caused by:",
+  opts: [
+    "Volcanic eruptions",
+    "Industrial emissions",
+    "Earthquakes",
+    "Ocean currents"
+  ],
+  answer: "B"
+},
+{
+  q: "The main source of freshwater on Earth is:",
+  opts: [
+    "Oceans",
+    "Rivers and lakes",
+    "Ice caps and glaciers",
+    "Groundwater only"
+  ],
+  answer: "C"
+},
+{
+  q: "Which is NOT a greenhouse gas?",
+  opts: [
+    "Carbon dioxide",
+    "Methane",
+    "Nitrous oxide",
+    "Nitrogen"
+  ],
+  answer: "D"
+},
+{
+  q: "Which method helps in soil conservation?",
+  opts: [
+    "Terrace farming",
+    "Over-irrigation",
+    "Deforestation",
+    "Shifting cultivation"
+  ],
+  answer: "A"
+},
+{
+  q: "The main cause of water pollution is:",
+  opts: [
+    "Industrial effluents",
+    "Rainfall",
+    "Evaporation",
+    "Condensation"
+  ],
+  answer: "A"
+},
+{
+  q: "Which renewable energy source uses flowing water?",
+  opts: [
+    "Solar",
+    "Wind",
+    "Hydropower",
+    "Biogas"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following is an abiotic component?",
+  opts: [
+    "Plants",
+    "Animals",
+    "Microorganisms",
+    "Temperature"
+  ],
+  answer: "D"
+},
+{
+  q: "The term ‘sustainable development’ was popularized by:",
+  opts: [
+    "Kyoto Protocol",
+    "Brundtland Commission",
+    "Rio Summit",
+    "Montreal Protocol"
+  ],
+  answer: "B"
+},
+{
+  q: "Which practice increases groundwater level?",
+  opts: [
+    "Rainwater harvesting",
+    "Urbanization",
+    "Deforestation",
+    "Over-pumping"
+  ],
+  answer: "A"
+},
+{
+  q: "Which pollutant causes smog?",
+  opts: [
+    "Sulphur dioxide",
+    "Carbon monoxide",
+    "Nitrogen oxides",
+    "Chlorine"
+  ],
+  answer: "C"
+},
+{
+  q: "Which type of waste can be composted?",
+  opts: [
+    "Plastic",
+    "Organic waste",
+    "Glass",
+    "Metal"
+  ],
+  answer: "B"
+},
+{
+  q: "Which act deals with prevention of air pollution in India?",
+  opts: [
+    "Water Act, 1974",
+    "Environment Protection Act, 1986",
+    "Air Act, 1981",
+    "Wildlife Act, 1972"
+  ],
+  answer: "C"
+},
+{
+  q: "The major source of marine pollution is:",
+  opts: [
+    "Oil spills",
+    "Forest fires",
+    "Volcanic eruptions",
+    "Desert storms"
+  ],
+  answer: "A"
+},
+{
+  q: "Which of the following is a fossil fuel?",
+  opts: [
+    "Wind energy",
+    "Solar energy",
+    "Coal",
+    "Hydropower"
+  ],
+  answer: "C"
+},
+{
+  q: "Eutrophication mainly affects:",
+  opts: [
+    "Air",
+    "Soil",
+    "Water bodies",
+    "Forests"
+  ],
+  answer: "C"
+},
+{
+  q: "Which is an example of non-point source pollution?",
+  opts: [
+    "Factory discharge pipe",
+    "Sewage outlet",
+    "Agricultural runoff",
+    "Thermal power plant"
+  ],
+  answer: "C"
+},
+{
+  q: "Which level of food chain has maximum energy?",
+  opts: [
+    "Primary producers",
+    "Primary consumers",
+    "Secondary consumers",
+    "Tertiary consumers"
+  ],
+  answer: "A"
+},
+{
+  q: "Which environmental problem is caused by excess fertilizers?",
+  opts: [
+    "Global warming",
+    "Acid rain",
+    "Eutrophication",
+    "Ozone depletion"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following conserves biodiversity?",
+  opts: [
+    "Poaching",
+    "Habitat destruction",
+    "Wildlife sanctuaries",
+    "Urbanization"
+  ],
+  answer: "C"
+},
+{
+  q: "Which gas is released during decomposition of organic waste?",
+  opts: [
+    "Oxygen",
+    "Methane",
+    "Nitrogen",
+    "Hydrogen"
+  ],
+  answer: "B"
+},
+{
+  q: "Which one is a natural disaster?",
+  opts: [
+    "Industrial explosion",
+    "Nuclear accident",
+    "Earthquake",
+    "Oil spill"
+  ],
+  answer: "C"
+},
+{
+  q: "The main objective of wildlife conservation is:",
+  opts: [
+    "Tourism development",
+    "Economic growth",
+    "Protection of species",
+    "Urban expansion"
+  ],
+  answer: "C"
+},
+{
+  q: "Which practice reduces air pollution?",
+  opts: [
+    "Use of public transport",
+    "Burning fossil fuels",
+    "Deforestation",
+    "Open waste burning"
+  ],
+  answer: "A"
+},
+{
+  q: "Which of the following is a biotic component of ecosystem?",
+  opts: [
+    "Water",
+    "Soil",
+    "Plants",
+    "Temperature"
+  ],
+  answer: "C"
+},
+{
+  q: "Which renewable resource is derived from plant and animal waste?",
+  opts: [
+    "Solar energy",
+    "Wind energy",
+    "Biogas",
+    "Hydropower"
+  ],
+  answer: "C"
+},
+{
+  q: "Deforestation mainly results in:",
+  opts: [
+    "Increase in rainfall",
+    "Loss of biodiversity",
+    "Improved soil fertility",
+    "Lower temperature"
+  ],
+  answer: "B"
+},
+{
+  q: "Which layer of atmosphere contains ozone?",
+  opts: [
+    "Troposphere",
+    "Mesosphere",
+    "Stratosphere",
+    "Thermosphere"
+  ],
+  answer: "C"
+},
+{
+  q: "Which one is an example of renewable energy?",
+  opts: [
+    "Coal",
+    "Petroleum",
+    "Natural gas",
+    "Solar energy"
+  ],
+  answer: "D"
+},
+{
+  q: "Noise pollution is measured in:",
+  opts: [
+    "Hertz",
+    "Decibel",
+    "Pascal",
+    "Watt"
+  ],
+  answer: "B"
+},
+{
+  q: "Which of the following causes ozone layer depletion?",
+  opts: [
+    "Carbon dioxide",
+    "Sulphur dioxide",
+    "Chlorofluorocarbons",
+    "Nitrogen"
+  ],
+  answer: "C"
+},
+{
+  q: "Which practice helps in reducing solid waste?",
+  opts: [
+    "Recycling",
+    "Landfilling",
+    "Incineration",
+    "Dumping"
+  ],
+  answer: "A"
+},
+{
+  q: "Which ecosystem has the highest biodiversity?",
+  opts: [
+    "Desert",
+    "Tundra",
+    "Tropical rainforest",
+    "Grassland"
+  ],
+  answer: "C"
+},
+{
+  q: "Which gas is mainly responsible for global warming?",
+  opts: [
+    "Oxygen",
+    "Carbon dioxide",
+    "Nitrogen",
+    "Helium"
+  ],
+  answer: "B"
+},
+{
+  q: "Which one is a primary consumer?",
+  opts: [
+    "Grass",
+    "Tiger",
+    "Deer",
+    "Eagle"
+  ],
+  answer: "C"
+},
+{
+  q: "The main source of energy in an ecosystem is:",
+  opts: [
+    "Wind",
+    "Sun",
+    "Water",
+    "Soil"
+  ],
+  answer: "B"
+},
+{
+  q: "Which of the following is a non-renewable resource?",
+  opts: [
+    "Wind",
+    "Solar",
+    "Coal",
+    "Biomass"
+  ],
+  answer: "C"
+},
+{
+  q: "Which phenomenon leads to rise in sea level?",
+  opts: [
+    "Deforestation",
+    "Glacial melting",
+    "Earthquake",
+    "Volcanic eruption"
+  ],
+  answer: "B"
+},
+{
+  q: "Which type of pollution affects hearing ability?",
+  opts: [
+    "Water pollution",
+    "Soil pollution",
+    "Noise pollution",
+    "Air pollution"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following is a biodegradable waste?",
+  opts: [
+    "Plastic bag",
+    "Glass bottle",
+    "Vegetable waste",
+    "Metal can"
+  ],
+  answer: "C"
+},
+{
+  q: "Which international agreement deals with climate change?",
+  opts: [
+    "Montreal Protocol",
+    "Kyoto Protocol",
+    "Basel Convention",
+    "Stockholm Convention"
+  ],
+  answer: "B"
+},
+{
+  q: "Which activity increases carbon footprint?",
+  opts: [
+    "Cycling",
+    "Planting trees",
+    "Using fossil fuels",
+    "Rainwater harvesting"
+  ],
+  answer: "C"
+},
+{
+  q: "Which is an example of in-situ conservation?",
+  opts: [
+    "Zoo",
+    "Botanical garden",
+    "National park",
+    "Seed bank"
+  ],
+  answer: "C"
+},
+{
+  q: "Which pollutant causes acid rain?",
+  opts: [
+    "Carbon monoxide",
+    "Sulphur dioxide",
+    "Methane",
+    "Ozone"
+  ],
+  answer: "B"
+},
+{
+  q: "Which of the following is a man-made disaster?",
+  opts: [
+    "Flood",
+    "Cyclone",
+    "Earthquake",
+    "Nuclear accident"
+  ],
+  answer: "D"
+},
+{
+  q: "Which resource is conserved by using LED bulbs?",
+  opts: [
+    "Water",
+    "Electricity",
+    "Soil",
+    "Air"
+  ],
+  answer: "B"
+},
+{
+  q: "Which environmental issue is caused by excessive mining?",
+  opts: [
+    "Soil erosion",
+    "Ozone depletion",
+    "Global cooling",
+    "Eutrophication"
+  ],
+  answer: "A"
+},
+{
+  q: "Which practice promotes sustainable agriculture?",
+  opts: [
+    "Crop rotation",
+    "Monocropping",
+    "Overgrazing",
+    "Excess fertilizer use"
+  ],
+  answer: "A"
+},
+{
+  q: "Which of the following reduces water pollution?",
+  opts: [
+    "Untreated sewage discharge",
+    "Industrial dumping",
+    "Wastewater treatment",
+    "Oil spill"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following is a secondary consumer?",
+  opts: [
+    "Grass",
+    "Goat",
+    "Snake",
+    "Phytoplankton"
+  ],
+  answer: "C"
+},
+{
+  q: "Which method helps conserve groundwater?",
+  opts: [
+    "Deforestation",
+    "Rainwater harvesting",
+    "Over-irrigation",
+    "Sand mining"
+  ],
+  answer: "B"
+},
+{
+  q: "Which gas is released during decomposition of organic waste?",
+  opts: [
+    "Oxygen",
+    "Nitrogen",
+    "Methane",
+    "Hydrogen"
+  ],
+  answer: "C"
+},
+{
+  q: "Which resource takes millions of years to form?",
+  opts: [
+    "Solar energy",
+    "Wind energy",
+    "Coal",
+    "Tidal energy"
+  ],
+  answer: "C"
+},
+{
+  q: "Which environmental movement started in India to protect trees?",
+  opts: [
+    "Narmada Bachao Andolan",
+    "Chipko Movement",
+    "Greenpeace",
+    "Silent Valley Movement"
+  ],
+  answer: "B"
+},
+{
+  q: "Which type of waste is hospital waste?",
+  opts: [
+    "Domestic waste",
+    "Industrial waste",
+    "Biomedical waste",
+    "Agricultural waste"
+  ],
+  answer: "C"
+},
+{
+  q: "Which one is a fossil fuel?",
+  opts: [
+    "Biogas",
+    "Coal",
+    "Solar",
+    "Wind"
+  ],
+  answer: "B"
+},
+{
+  q: "Which practice causes land degradation?",
+  opts: [
+    "Afforestation",
+    "Crop rotation",
+    "Overgrazing",
+    "Organic farming"
+  ],
+  answer: "C"
+},
+{
+  q: "Which environmental factor affects climate?",
+  opts: [
+    "Latitude",
+    "Longitude",
+    "Altitude",
+    "All of the above"
+  ],
+  answer: "D"
+},
+{
+  q: "Which sector consumes the maximum freshwater globally?",
+  opts: [
+    "Domestic",
+    "Industrial",
+    "Agricultural",
+    "Recreational"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following causes eutrophication?",
+  opts: [
+    "Oil spills",
+    "Excess fertilizers",
+    "Plastic waste",
+    "Thermal pollution"
+  ],
+  answer: "B"
+},
+{
+  q: "Which species is at highest risk of extinction?",
+  opts: [
+    "Endangered species",
+    "Dominant species",
+    "Invasive species",
+    "Keystone species"
+  ],
+  answer: "A"
+},
+{
+  q: "Which device is used to control air pollution in industries?",
+  opts: [
+    "Electrostatic precipitator",
+    "Incinerator",
+    "Composter",
+    "Sedimentation tank"
+  ],
+  answer: "A"
+},
+{
+  q: "Which type of farming reduces soil erosion?",
+  opts: [
+    "Shifting cultivation",
+    "Contour farming",
+    "Monoculture",
+    "Slash and burn"
+  ],
+  answer: "B"
+},
+{
+  q: "Which international day is celebrated as World Environment Day?",
+  opts: [
+    "June 5",
+    "April 22",
+    "March 21",
+    "May 1"
+  ],
+  answer: "A"
+},
+{
+  q: "Which renewable energy source uses flowing water?",
+  opts: [
+    "Wind energy",
+    "Solar energy",
+    "Hydroelectric power",
+    "Geothermal energy"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following is a point source of pollution?",
+  opts: [
+    "Automobile exhaust",
+    "Factory chimney",
+    "Agricultural runoff",
+    "Forest fire"
+  ],
+  answer: "B"
+},
+{
+  q: "Which environmental problem results from excessive pesticide use?",
+  opts: [
+    "Biomagnification",
+    "Ozone depletion",
+    "Global cooling",
+    "Acid rain"
+  ],
+  answer: "A"
+},
+{
+  q: "Which process converts waste into energy?",
+  opts: [
+    "Landfilling",
+    "Recycling",
+    "Waste-to-energy",
+    "Composting"
+  ],
+  answer: "C"
+},
+{
+  q: "Which of the following is a natural disaster?",
+  opts: [
+    "Chemical spill",
+    "Nuclear leakage",
+    "Earthquake",
+    "Industrial explosion"
+  ],
+  answer: "C"
+},
+{
+  q: "Which ecosystem is found in coastal regions?",
+  opts: [
+    "Desert",
+    "Grassland",
+    "Mangrove",
+    "Tundra"
+  ],
+  answer: "C"
+},
+{
+  q: "Which gas is essential for respiration?",
+  opts: [
+    "Carbon dioxide",
+    "Oxygen",
+    "Nitrogen",
+    "Ozone"
+  ],
+  answer: "B"
+},
+{
+  q: "Which practice helps reduce air pollution?",
+  opts: [
+    "Using public transport",
+    "Burning waste",
+    "Deforestation",
+    "Using diesel generators"
+  ],
+  answer: "A"
+},
+{
+  q: "Which of the following is an abiotic factor?",
+  opts: [
+    "Bacteria",
+    "Plants",
+    "Animals",
+    "Temperature"
+  ],
+  answer: "D"
+},
+{
+  q: "Which law aims to protect wildlife in India?",
+  opts: [
+    "Forest Conservation Act",
+    "Environment Protection Act",
+    "Wildlife Protection Act",
+    "Water Act"
+  ],
+  answer: "C"
+}
 
 ];
 
