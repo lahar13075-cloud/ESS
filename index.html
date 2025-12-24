@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ESS Test — Neon Black</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div>
+          <h1>ESS Test</h1>
+          <div class="sub designed">Designed by Nexus</div>
+          <div class="sub">One question per page • 100 marks • 1 mark each</div>
+        </div>
+        <div>
+          <button id="themeToggle" class="btn">Light Mode</button>
+        </div>
+      </header>
+
+      <div id="startPage">
+        <div class="sub">Enter student's name and choose options</div>
+        <label class="input">Name:
+          <input type="text" id="username" placeholder="Type name" />
+        </label>
+
+        <div style="margin-top:14px">
+          <button class="btn ripple" id="startBtn">Start Test</button>
+        </div>
+      </div>
+
+      <div id="quiz">
+        <div class="progress-wrap">
+          <div class="progress"><i id="progressBar"></i></div>
+        </div>
+
+        <div class="meta">
+          <div class="small" id="progressText">Question 1 / 100</div>
+          <div class="small" id="timerText">60:00</div>
+        </div>
+
+        <div class="qstage" id="qstage"></div>
+
+        <div class="controls">
+          <div class="navBtns">
+            <button class="btn ripple" id="prevBtn">Previous</button>
+            <button class="btn ripple" id="nextBtn">Next</button>
+          </div>
+          <div class="small">
+            Answered: <span id="answeredCount">0</span>/<span id="totalCount">0</span>
+          </div>
+        </div>
+
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
